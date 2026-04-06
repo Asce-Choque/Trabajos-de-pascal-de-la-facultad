@@ -1,0 +1,37 @@
+program longitudes;
+uses crt;
+var num:real;
+    numero:integer;
+    kilometros, centimetros1, centimetros2:real;
+const milla=1.609344;
+      pie=30.48;
+      pulgada=2.54;
+begin
+     clrscr;
+     writeln('Presione 1 para millas, 2 para pies, 3 para pulgadas');
+     readln(numero);
+     if(numero=1)then
+     begin
+     writeln('ingrese el numero');
+     readln(num);
+     kilometros:=num*milla;
+     writeln('los kilometros son ', kilometros:0:2);
+     readln();
+     end;
+         if(numero=2)then
+         begin
+         writeln('ingrese el numero');
+         readln(num);
+         centimetros1:=num*pie;
+         writeln('los pies a centimetros son ',centimetros1:0:2);
+         readln();
+         end;
+             if(numero=3)then
+             begin
+             writeln('ingrese el numero');
+             readln(num);
+             centimetros2:=num*pulgada;
+             writeln('las pulgadas a centimetros son ', centimetros2);
+             readln();
+             end;
+end.
