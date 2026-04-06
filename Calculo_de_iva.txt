@@ -1,0 +1,20 @@
+Program Impuesto;
+uses crt;
+var valor1, valor2, valor3:real;
+    resultado, resultado1:real;
+const iva=21;
+begin
+     clrscr;
+     writeln('hola, ingrese el valor del primer producto');
+     readln(valor1);
+     writeln('ingrese el valor del segundo producto');
+     readln(valor2);
+     writeln('ingrese el valor del tercer producto');
+     readln(valor3);
+     resultado:= valor1+valor2+valor3;
+     writeln('El precio a pagar es ', resultado:0:2);
+     readln();
+     resultado1:=resultado*iva/100;
+     writeln('el iva que pago por su compra es ', resultado1:0:2);
+     readln();
+end.
